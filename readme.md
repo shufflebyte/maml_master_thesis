@@ -67,11 +67,11 @@ Figure 5 shows that parallelizing MAML does work. The higher the number of paral
 
 I found out, that the most important factor for a higher accuracy is the number of seen training tasks (well thats not breaking news). Thus I compared different parameters and increased these so that the number of seen tasks remains the same (see my presentation / thesis for further declaration). Figure 6 shows that increasing these parameters results in a wall time increase (increase about 1500%) that is linear proportional to the scaling ratio except the number of workers (increase by 43%). Thus, increasing the number of workers is efficient in a wall time perspective. Concluding from all my experiments it seems to be **most efficient to parallelize the tasks** instead of the whole MAML algorithm (as we did in our research), since a higher accuracy in total is achieved (but this was not obvious at the beginning of the project) and for complex problems not the meta-learning process but the calculation of the task is the thing, that costs much time.
 
-You can find my presentation for overview HERE
+ [You can find my presentation for overview here](presentation.pdf)
 
-You can find my master thesis HERE
+[You can find my master thesis here](thesis.pdf)
 
-The source code may be available at some time here..
+The source code may or may not be available at some time here..
 
 Please do not steal my work, you may cite me with following bibtex code:
 
